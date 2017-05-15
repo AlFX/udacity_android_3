@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="question">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:padding">30dp</item>
+        <item name="android:rotation">5</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Acheck">
+        <item name="android:buttonTint">@color/colorAccent2</item>
+        <item name="android:checked">false</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorDefault</item>
+    </style>
+
+    <style name="input_text">
+        <item name="android:colorControlNormal">@color/colorDefault</item>
+        <item name="android:colorControlHighlight">@color/colorAccent</item>
+        <item name="android:colorControlActivated">@color/colorAccent2</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:textColor">@color/colorDefault</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="button">
+        <item name="android:rotation">5</item>
+        <item name="android:layout_width">128dp</item>
+        <item name="android:layout_height">128dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">64sp</item>
+    </style>
+
+    <style name="intro">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textColor">@color/colorAccent2</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+</resources>

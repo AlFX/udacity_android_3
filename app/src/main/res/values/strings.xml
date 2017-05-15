@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Real Life Engineering</string>
+
+    <string name="q1">What\'s your name?</string>
+
+    <string name="intro">Let\'s check how much do you know about some basic engineering!</string>
+
+
+    <string name="q2">What forces slow a car down?</string>
+    <string name="a21">Friction between road and tyres.</string>
+    <string name="a22">Air resistance.</string>
+    <string name="a23">Weight.</string>
+
+    <string name="q3">Does fuel consumption of a car change with speed? if so, how?</string>
+    <string name="a31">It doesn\'t.</string>
+    <string name="a32">Linearly.</string>
+    <string name="a33">Quadratically.</string>
+
+    <string name="q4">What forces act on a jet fighter?</string>
+    <string name="a41">Weight.</string>
+    <string name="a42">Drag.</string>
+    <string name="a43">Lift.</string>
+    <string name="a44">Thrust.</string>
+
+    <string name="q5">How do wings provide lift?</string>
+    <string name="a51">They are curved on the top and flatter on the bottom.</string>
+    <string name="a52">Pressure builds up on the bottom of the wing.</string>
+    <string name="a53">It\'s magic.</string>
+
+    <string name="q6">What is a sonic boom?</string>
+    <string name="a61">What happens when an object hits an obstacle.</string>
+    <string name="a62">What happens when an object travels faster than sound.</string>
+    <string name="a63">What happens when I eat too much.</string>
+
+    <string name="username">C\'mon, tell me!</string>
+
+    <string name="button">Go!</string>
+
+    <array name="correct_checkboxes">
+        <item>@id/a21</item>
+        <item>@id/a22</item>
+
+        <item>@id/a41</item>
+        <item>@id/a42</item>
+        <item>@id/a43</item>
+        <item>@id/a44</item>
+
+        <item>@id/a51</item>
+        <item>@id/a52</item>
+
+    </array>
+
+    <array name="correct_radio">
+        <item>@id/a33</item>
+        <item>@id/a62</item>
+    </array>
+
+</resources>

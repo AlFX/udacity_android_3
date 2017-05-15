@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryNeutral"
+    tools:context="com.example.alessio.quiz.MainActivity">
+
+    <!-- ACTION BAR PROBLEM:
+    I don't like it but I could not find anything reasonable
+    on the internet in order to edit it. Actually, should I edit
+    it of just remove it and replace with a raster logo?
+    If so: in order to remove the action bar, I can I do that via
+    code? Don't like tweaking stuff via IDE.
+    Actually I don't like Android Studio very much :'( -->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- QUESTION GROUP 1: OPEN-->
+        <TextView
+            android:id="@+id/q1"
+            style="@style/question"
+            android:text="@string/q1" />
+
+        <!-- EditText PROBLEM: once you type your name I cannot get rid
+        of the keyboard, nor make the cursor disappear:
+        not sure how to make this EditText un-focusable
+        any advice, please?-->
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/EditText"
+            android:hint="@string/username" />
+
+        <!-- INTRO -->
+        <TextView
+            android:text="@string/intro"
+            style="@style/intro" />
+
+        <!-- QUESTION GROUP 2: CHECKBOX-->
+        <TextView
+            android:id="@+id/q2"
+            style="@style/question"
+            android:text="@string/q2" />
+
+        <CheckBox
+            android:id="@+id/a21"
+            style="@style/Acheck"
+            android:text="@string/a21" />
+
+        <CheckBox
+            android:id="@+id/a22"
+            style="@style/Acheck"
+            android:text="@string/a22" />
+
+        <CheckBox
+            style="@style/Acheck"
+            android:text="@string/a23" />
+
+        <!-- QUESTION GROUP 3: RADIO-->
+        <TextView
+            android:id="@+id/q3"
+            style="@style/question"
+            android:text="@string/q3" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/Acheck"
+                android:text="@string/a31" />
+
+            <RadioButton
+                style="@style/Acheck"
+                android:text="@string/a32" />
+
+            <RadioButton
+                android:id="@+id/a33"
+                style="@style/Acheck"
+                android:text="@string/a33" />
+
+        </RadioGroup>
+
+        <!-- QUESTION GROUP 4: CHECKBOX-->
+        <TextView
+            android:id="@+id/q4"
+            style="@style/question"
+            android:text="@string/q4" />
+
+        <CheckBox
+            android:id="@+id/a41"
+            style="@style/Acheck"
+            android:text="@string/a41" />
+
+        <CheckBox
+            android:id="@+id/a42"
+            style="@style/Acheck"
+            android:text="@string/a42" />
+
+        <CheckBox
+            android:id="@+id/a43"
+            style="@style/Acheck"
+            android:text="@string/a43" />
+
+        <CheckBox
+            android:id="@+id/a44"
+            style="@style/Acheck"
+            android:text="@string/a44" />
+
+        <!-- QUESTION GROUP 5: CHECKBOX-->
+        <TextView
+            android:id="@+id/q5"
+            style="@style/question"
+            android:text="@string/q5" />
+
+        <CheckBox
+            android:id="@+id/a51"
+            style="@style/Acheck"
+            android:text="@string/a51" />
+
+        <CheckBox
+            android:id="@+id/a52"
+            style="@style/Acheck"
+            android:text="@string/a52" />
+
+        <CheckBox
+            style="@style/Acheck"
+            android:text="@string/a53" />
+
+        <!-- QUESTION GROUP 6: RADIO-->
+        <TextView
+            android:id="@+id/q6"
+            style="@style/question"
+            android:text="@string/q6" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/Acheck"
+                android:text="@string/a61" />
+
+            <RadioButton
+                android:id="@+id/a62"
+                style="@style/Acheck"
+                android:text="@string/a62" />
+
+            <RadioButton
+                style="@style/Acheck"
+                android:text="@string/a63" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <Button
+                style="@style/button"
+                android:onClick="master"
+                android:text="@string/button" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -62,6 +62,7 @@
             android:text="@string/a22" />
 
         <CheckBox
+            android:id="@+id/a23"
             style="@style/Acheck"
             android:text="@string/a23" />
 
@@ -133,6 +134,7 @@
             android:text="@string/a52" />
 
         <CheckBox
+            android:id="@+id/a53"
             style="@style/Acheck"
             android:text="@string/a53" />
 
@@ -161,6 +163,18 @@
 
         </RadioGroup>
 
+        <!-- QUESTION GROUP 7: OPEN-->
+        <TextView
+            android:id="@+id/q7"
+            style="@style/question"
+            android:text="@string/q7" />
+
+        <EditText
+            android:id="@+id/open"
+            style="@style/EditText"
+            android:hint="@string/open" />
+
+        <!-- SUBMIT BUTTON -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

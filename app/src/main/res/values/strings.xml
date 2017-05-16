@@ -32,27 +32,11 @@
     <string name="a62">What happens when an object travels faster than sound.</string>
     <string name="a63">What happens when I eat too much.</string>
 
+    <string name="q7">What fuel do they use in airliners?</string>
+    <string name="open">Starts with K</string>
+
     <string name="username">C\'mon, tell me!</string>
 
     <string name="button">Go!</string>
-
-    <array name="correct_checkboxes">
-        <item>@id/a21</item>
-        <item>@id/a22</item>
-
-        <item>@id/a41</item>
-        <item>@id/a42</item>
-        <item>@id/a43</item>
-        <item>@id/a44</item>
-
-        <item>@id/a51</item>
-        <item>@id/a52</item>
-
-    </array>
-
-    <array name="correct_radio">
-        <item>@id/a33</item>
-        <item>@id/a62</item>
-    </array>
 
 </resources>

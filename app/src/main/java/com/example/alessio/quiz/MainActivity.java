@@ -40,74 +40,58 @@ public class MainActivity extends AppCompatActivity {
         String score = "";
         int ans = 0;
 
-        CheckBox right = (CheckBox) findViewById(R.id.a21);
-        if (right.isChecked()) {
-            ans++;
-        }
-        right = (CheckBox) findViewById(R.id.a22);
-        if (right.isChecked()) {
-            ans++;
-        }
-        CheckBox wrong = (CheckBox) findViewById(R.id.a23);
-        if (!wrong.isChecked()) {
-            ans ++;
-        }
+        /*1st checkboxes question*/
+        CheckBox right1 = (CheckBox) findViewById(R.id.a21);
+        CheckBox right2 = (CheckBox) findViewById(R.id.a22);
+        CheckBox wrong1 = (CheckBox) findViewById(R.id.a23);
 
-        right = (CheckBox) findViewById(R.id.a41);
-        if (right.isChecked()) {
-            ans++;
-        }
-        right = (CheckBox) findViewById(R.id.a42);
-        if (right.isChecked()) {
-            ans++;
-        }
-        right = (CheckBox) findViewById(R.id.a43);
-        if (right.isChecked()) {
-            ans++;
-        }
-        right = (CheckBox) findViewById(R.id.a44);
-        if (right.isChecked()) {
+        if (right1.isChecked() && right2.isChecked() && !wrong1.isChecked()) {
             ans++;
         }
 
-        right = (CheckBox) findViewById(R.id.a51);
-        if (right.isChecked()) {
+        /*2nd checkboxes question*/
+        right1 = (CheckBox) findViewById(R.id.a41);
+        right2 = (CheckBox) findViewById(R.id.a42);
+        CheckBox right3 = (CheckBox) findViewById(R.id.a43);
+        CheckBox right4 = (CheckBox) findViewById(R.id.a44);
+
+        if (right1.isChecked() && right2.isChecked() && right3.isChecked() && right4.isChecked()) {
             ans++;
-        }
-        right = (CheckBox) findViewById(R.id.a52);
-        if (right.isChecked()) {
-            ans++;
-        }
-        wrong = (CheckBox) findViewById(R.id.a53);
-        if (!wrong.isChecked()) {
-            ans ++;
         }
 
+        /*3rd checkboxes question*/
+        right1 = (CheckBox) findViewById(R.id.a51);
+        right2 = (CheckBox) findViewById(R.id.a52);
+        wrong1 = (CheckBox) findViewById(R.id.a53);
+
+        if (right1.isChecked() && right2.isChecked() && !wrong1.isChecked()) {
+            ans++;
+        }
+
+        /*1st radio question*/
         RadioButton rad = (RadioButton) findViewById(R.id.a33);
         if (rad.isChecked()) {
             ans++;
         }
+        /*2nd radio question*/
         rad = (RadioButton) findViewById(R.id.a62);
         if (rad.isChecked()) {
             ans++;
         }
 
+        /*open question*/
         EditText open = (EditText) findViewById(R.id.open);
-
-
-        if (open.getText().toString().equals("kerosene") ||
-            open.getText().toString().equals("Kerosene") ||
-            open.getText().toString().equals("KEROSENE")) {
-            ans ++;
+        if (open.getText().toString().toLowerCase().trim().equals("kerosene")) {
+            ans++;
         }
 
-        int correct = 13;
+        int correct = 6;
         if (ans == correct) {
             score = "All answers correct!";
         } else {
             mistakes = correct - ans;
             Integer.toString(mistakes);
-            score = "Review your answers, there are " + mistakes + " mistakes.";
+            score = "Review your answers to " + mistakes + " questions.";
         }
         return (score);
     }

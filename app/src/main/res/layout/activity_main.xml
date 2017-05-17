@@ -42,8 +42,8 @@
 
         <!-- INTRO -->
         <TextView
-            android:text="@string/intro"
-            style="@style/intro" />
+            style="@style/intro"
+            android:text="@string/intro" />
 
         <!-- QUESTION GROUP 2: CHECKBOX-->
         <TextView
